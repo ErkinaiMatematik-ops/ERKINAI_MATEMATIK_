@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Эркинай — математик, мобилограф, курс ОРТ и ИИ</title>
+  <meta name="description" content="Эркинай эже: математика, подготовка к ОРТ, искусственный интеллект и мобилография.">
+  <meta name="theme-color" content="#f3f7fb">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Эркинай эже — математик, мобилограф, курс ОРТ и ИИ">
+  <meta property="og:description" content="Математика, подготовка к ОРТ, искусственный интеллект и мобилография.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23d62f2f'/%3E%3Ctext x='32' y='45' font-size='38' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='white'%3E%D0%AD%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#about">Перейти к содержанию</a>
+ 
+<header class="top">
+  <a class="brand" href="#top">Эркинай </a>
+  <button class="burger" aria-label="Меню" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+  <nav id="menu">
+    <a href="#about">Обо мне</a>
+    <a href="#directions">Направления</a>
+    <a href="#ort">Курс ОРТ</a>
+    <a href="#mobil">Мобилография</a>
+    <a href="#contact" class="pill">Связаться</a>
+  </nav>
+</header>
+ 
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="lead">Математик · мобилограф · преподаватель курса ОРТ</p>
+      <h1>Эркинай </h1>
+      <p class="sub">Объясняю математику так, чтобы она стала понятной, готовлю к ОРТ, показываю, как работать с искусственным интеллектом и снимать на телефон так, что хочется смотреть.</p>
+      <div class="actions">
+        <a class="btn primary" href="#ort">Курс ОРТ</a>
+        <a class="btn" href="#contact">Написать</a>
+      </div>
+    </div>
+ 
+    <div class="plot" aria-label="Интерактивный график функции">
+      <canvas id="graph" width="640" height="420"></canvas>
+      <div class="plot-ui">
+        <p class="formula" id="formula">y = 2·sin(1·x)</p>
+        <label>Амплитуда <input type="range" id="amp" min="0.5" max="3" step="0.1" value="2"></label>
+        <label>Частота <input type="range" id="freq" min="0.5" max="4" step="0.1" value="1"></label>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <figure class="portrait" data-photo>
+      <img src="./IMG_8508.JPG.jpeg" alt="Эркинай эже">
+      <div class="ph"><span></span><small></small></div>
+    </figure>
+    <div>
+      <h2>Обо мне</h2>
+      <p>Я математик: люблю, когда сложная задача раскладывается на простые шаги. С этого подхода начинается любой урок.</p>
+      <p>Сегодня я соединяю математику с искусственным интеллектом и мобилографией. ИИ помогает учиться быстрее, а телефон превращает идеи в видео и фотографии.</p>
+      <ul class="facts">
+        <li><strong>4</strong> направления</li>
+        <li><strong>ОРТ</strong> подготовка с нуля</li>
+        <li><strong>ИИ</strong> в учёбе и работе</li>
+      </ul>
+    </div>
+  </section>
+ 
+  <!-- DIRECTIONS -->
+  <section id="directions" class="directions">
+    <h2>Чем я занимаюсь</h2>
+    <div class="grid">
+      <article class="card c-math">
+        <h3>Математика</h3>
+        <p>Алгебра, геометрия, логика. Разбираем темы по шагам и закрепляем на задачах.</p>
+      </article>
+      <article class="card c-ai">
+        <h3>Искусственный интеллект</h3>
+        <p>Как использовать ИИ для учёбы, текстов, идей и работы. Практика на реальных задачах.</p>
+      </article>
+      <article class="card c-ort">
+        <h3>Курс ОРТ</h3>
+        <p>Системная подготовка к Общереспубликанскому тестированию: математика, логика, разбор ошибок.</p>
+      </article>
+      <article class="card c-mob">
+        <h3>Мобилография</h3>
+        <p>Фото и видео на телефон: кадр, свет, монтаж и подача, без дорогой техники.</p>
+      </article>
+    </div>
+  </section>
+ 
+  <!-- ORT -->
+  <section id="ort" class="ort">
+    <div class="ort-info">
+      <h2>Курс ОРТ</h2>
+      <p>Курс для тех, кто хочет набрать высокий балл и спокойно чувствовать себя на тесте.</p>
+      <ul class="check">
+        <li>Разбор тем по математике от базы до сложных заданий</li>
+        <li>Тренировка на тестах в формате ОРТ</li>
+        <li>Работа над ошибками и скоростью решения</li>
+        <li>Помощь ИИ при подготовке и самопроверке</li>
+      </ul>
+      <a class="btn primary" href="#contact">Записаться на курс</a>
+    </div>
+ 
+    <div class="quiz" id="quiz">
+      <h3>Задача для разминки</h3>
+      <p class="q">Решите уравнение: <b>2x + 6 = 14</b>. Чему равен x?</p>
+      <div class="opts">
+        <button data-v="2">2</button>
+        <button data-v="4" data-ok="1">4</button>
+        <button data-v="6">6</button>
+        <button data-v="8">8</button>
+      </div>
+      <p class="res" id="res" role="status"></p>
+    </div>
+  </section>
+ 
+  <!-- MOBILOGRAPHY -->
+  <section id="mobil" class="mobil">
+    <h2>Мобилография</h2>
+    <p class="intro">Работы, снятые на телефон. Лучшая камера та, что всегда с собой.</p>
+    <div class="gallery">
+      <figure data-photo class="g1"><img src="./IMG_8429.JPG.jpeg" alt="Мобилография, работа 1"><div class="ph"><small>photos/mobil-1.jpg</small></div></figure>
+      <figure data-photo class="g2"><img src="./IMG_8409.JPG.jpeg" alt="Мобилография, работа 2"><div class="ph"><small>photos/mobil-2.jpg</small></div></figure>
+      <figure data-photo class="g3"><img src="./IMG_8457.JPG.jpeg" alt="Мобилография, работа 3"><div class="ph"><small>photos/mobil-3.jpg</small></div></figure>
+      <figure data-photo class="g4"><img src="./IMG_8508.JPG.jpeg" alt="Мобилография, работа 4"><div class="ph"><small>photos/mobil-4.jpg</small></div></figure>
+    </div>
+  </section>
+ 
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2>Связаться</h2>
+    <p>Напишите, и мы подберём формат занятий.</p>
+    <form id="form" class="form">
+      <label>Ваше имя
+        <input name="name" required autocomplete="name">
+      </label>
+      <label>Что вас интересует
+        <select name="topic">
+          <option>Курс ОРТ</option>
+          <option>Математика</option>
+          <option>Искусственный интеллект</option>
+          <option>Мобилография</option>
+        </select>
+      </label>
+      <label>Сообщение
+        <textarea name="msg" rows="3" placeholder="Класс, цель, удобное время"></textarea>
+      </label>
+      <button class="btn primary" type="submit">Отправить в WhatsApp</button>
+    </form>
+    <div class="links">
+      <!-- Номер WhatsApp меняется в script.js (PHONE). Остальные ссылки замените здесь -->
+      <a class="btn primary" id="wa-link" href="https://wa.me/996508444505">WhatsApp</a>
+      <a class="btn" href="https://www.instagram.com/erkinai_matematik?dlrf=b2VxNGdlMHF0NzVl&utm_source=qr">Instagram</a>
+      <a class="btn" href="https://t.me/erkinai_matematik">Telegram</a>
+    </div>
+  </section>
+</main>
+ 
+<footer>
+  <p>© <span id="year"></span> Эркинай </p>
+</footer>
+ 
+<script src="script.js"></script>
+</body>
+</html>
